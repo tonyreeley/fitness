@@ -1,1 +1,37 @@
-<p>login works!</p>
+<mat-card class="login-form">
+  <mat-card-header>
+    <div mat-card-avatar class="login icon"><mat-icon>account_circle</mat-icon></div>
+    <mat-card-title>
+      Login
+    </mat-card-title>
+  </mat-card-header>
+    <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" #l="ngForm" (ngSubmit)="onSubmit(l)">
+        <mat-form-field>
+            <input
+                type="email"
+                matInput
+                placeholder="Your email"
+                ngModel
+                name="email"
+                email
+                required
+                #emailInput="ngModel">
+                <mat-error *ngIf="emailInput.hasError('required')">Field must not be empty.</mat-error>
+                <mat-error *ngIf="!emailInput.hasError('required')">E-Mail is invalid.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input
+                type="password"
+                matInput
+                placeholder="Your password"
+                ngModel
+                name="password"
+                required
+                #pwInput="ngModel">
+        </mat-form-field>
+        <button type="submit" mat-raised-button color="primary" [disabled]="l.invalid">Submit</button>
+    </form>
+</mat-card>
+<section class="login-form">
+
+</section>
