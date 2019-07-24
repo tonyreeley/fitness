@@ -3,13 +3,21 @@ import {
     MatButtonModule,
     MatIconModule,
     MatNativeDateModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatTabsModule,
+    MatSelectModule,
+    MatProgressSpinnerModule,
+    MatDialogModule
     } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
+
 
 
 @NgModule({
@@ -22,7 +30,14 @@ import { MatCardModule } from '@angular/material/card';
         MatDatepickerModule,
         MatNativeDateModule,
         MatCheckboxModule,
-        MatCardModule
+        MatCardModule,
+        MatSidenavModule,
+        MatToolbarModule,
+        MatListModule,
+        MatTabsModule,
+        MatSelectModule,
+        MatProgressSpinnerModule,
+        MatDialogModule
 
     ],
     exports: [
@@ -33,7 +48,14 @@ import { MatCardModule } from '@angular/material/card';
         MatDatepickerModule,
         MatNativeDateModule,
         MatCheckboxModule,
-        MatCardModule
+        MatCardModule,
+        MatSidenavModule,
+        MatToolbarModule,
+        MatListModule,
+        MatTabsModule,
+        MatSelectModule,
+        MatProgressSpinnerModule,
+        MatDialogModule
     ]
 })
 
